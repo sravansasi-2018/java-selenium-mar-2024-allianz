@@ -50,6 +50,9 @@ public class Demo5FBSignUp {
 		
 		//click on custom radio button
 		driver.findElement(By.xpath("//input[@value='-1']")).click();
+		
+		//sign up
+		driver.findElement(By.xpath("//button[text()='Sign Up']")).click();
 	}
 
 }
