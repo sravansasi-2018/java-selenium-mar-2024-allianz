@@ -22,8 +22,11 @@ public class Demo1 {
         driver.findElement(By.name("fldLoginUserId"))
         .sendKeys("jack123");
         //click continue
+        //link text should match the text case in ui (upper or lower case), in difference in us and html, use xpath
         driver.findElement(By.linkText("CONTINUE")).click();
         
+        //switch to main html
+        driver.switchTo().defaultContent();        
 	}
 
 }
